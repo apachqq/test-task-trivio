@@ -43,7 +43,7 @@
     export default {
         data() {
             return {
-                isOpen: true,
+                isOpen: false,
                 balance: '-597 771, 77',
                 debt: '0, 00'
             }
