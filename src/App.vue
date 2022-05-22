@@ -43,7 +43,7 @@
     export default {
         data() {
             return {
-                isOpen: false,
+                isOpen: true,
                 balance: '-597 771, 77',
                 debt: '0, 00'
             }
@@ -65,7 +65,7 @@
 
         div {
             padding-top: 5rem;
-            max-width: 500px;
+            max-width: 400px;
         }
     }
 
