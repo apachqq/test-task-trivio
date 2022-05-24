@@ -99,7 +99,19 @@
 
     @media screen and (max-width: 420px) {
         .dialog {
-            bottom: 575px;
+            bottom: 618px;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .dialog {
+            bottom: 537px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .dialog {
+            bottom: 617px;
         }
     }
 </style>

@@ -1,10 +1,10 @@
 <template>
     <the-header
             :isOpen="isOpen"
-            @close="closeMyDialog"
+            @close="closeOpenMyDialog"
     ></the-header>
     <my-body
-            @click="isOpen = false"
+            @click="closeMyDialog"
     ></my-body>
     <my-dialog style="position: relative"
                :isOpen="isOpen"
@@ -23,8 +23,11 @@
             }
         },
         methods: {
-            closeMyDialog() {
+            closeOpenMyDialog() {
                 this.isOpen = !this.isOpen
+            },
+            closeMyDialog() {
+                this.isOpen = false
             }
         },
         components: {TheHeader, MyDialog, MyBody}
